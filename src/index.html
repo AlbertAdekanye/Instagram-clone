@@ -53,9 +53,9 @@
 
 <!-- Feed -->
 
-<main>
+<main class="grid grid-cols-1 md:grid-cols-3 mx-auto md:max-w-6xl">
 
-  <section>
+  <section class="md:col-span-2 ">
 
     <!-- left -->
   
@@ -308,13 +308,58 @@
 
   </section>
 
-  <section>
+  <section class="hidden md:inline-grid md:col-span-1">
 
     <!-- right -->
-  
+
+    <div class="fixed w-[380px]">
       <!-- mini profile -->
-  
+      <div class="flex items-center justify-between mt-14 ml-10">
+        <img src="data:image/jpeg;base64,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" alt="user-image" class="h-16 rounded-full border p-[2px]">
+
+       <div class="flex-1 ml-4">
+          <h2 class="font-bold">KanyeCode</h2>
+          <h3 class="text-sm text-gray-400">Software engineer</h3>
+       </div>
+       <button class="font-semibold text-blue-400 text-sm">switch</button>
+      </div>
+
       <!-- suggestion -->
+
+
+      <div class="mt-4 ml-10">
+        <div class="flex justify-between mb-5 text-sm ">
+          <h3 class="font-bold text-gray-400">Suggestion for you</h3>
+          <button class="text-gray-600 font-semibold">See all</button>
+        </div>
+        <div class="flex items-center justify-between mt-3">
+          <img class="h-10 border-l rounded-full p-[2px] " src="https:/i.pravatar.cc/150?img=19" alt="user-image">
+          <div class="flex-1 ml-4">
+            <h2 class="font-semibold text-sm">Maria233</h2>
+            <h3 class="text-sm text-gray-400">Manager</h3>
+          </div>
+          <button class="font-semibold text-blue-400 text-sm">Follow</button>
+        </div>
+         <div class="flex items-center justify-between mt-3">
+          <img class="h-10 border-l rounded-full p-[2px] " src="https:/i.pravatar.cc/150?img=45" alt="user-image">
+          <div class="flex-1 ml-4">
+            <h2 class="font-semibold text-sm">Eva Kate</h2>
+            <h3 class="text-sm text-gray-400">Bar Tender</h3>
+          </div>
+          <button class="font-semibold text-blue-400 text-sm">Follow</button>
+        </div>
+         <div class="flex items-center justify-between mt-3">
+          <img class="h-10 border-l rounded-full p-[2px] " src="https:/i.pravatar.cc/150?img=49" alt="user-image">
+          <div class="flex-1 ml-4">
+            <h2 class="font-semibold text-sm">JaneSa</h2>
+            <h3 class="text-sm text-gray-400">Content Writer</h3>
+          </div>
+          <button class="font-semibold text-blue-400 text-sm">Follow</button>
+        </div>
+
+      </div>
+    </div>
+  
   </section>
 </main>
 
